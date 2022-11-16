@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="assets/css/estiloCarta.css">
+    <link rel="stylesheet" href="carousel/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="carousel/owl.carousel.min.css">
+    <!-- =====BOX ICONS===== -->
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Portfolio completo</title>
+    <!-- css del footer-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+
+    <header class="header">
+        <div class="header__container">
+            <img src="assets/img/anyuli.jpeg" alt="" class="header__img">
+
+            <a href="#" class="header__logo">
+            Anyuli Picado
+            </a>
+            
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+    <!--========== NAV ==========-->
+   
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+
+                <h1 class="home__title">Hola,<br>soy <span class="home__title-color">Anyuli</span></h1>
+
+                <a href="#contactme" class="button">Contactame</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/profile.php?id=100009606554653" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/pinolconleche_/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/Capa 2.png" alt="">
+            </div>
+        </section>
+       
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Acerca De</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/acerca.jpeg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Soy Anyuli</h2>
+                    <p class="about__text">Hola mi nombre es Anyuli Karelly Picado Cruz, Tengo 20 años y soy de la ciudad
+                        de Esteli, Nicaragua. Curso en el 3er año de la carrera de Diseño Gráfico en
+                        FAREM-Esteli. </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Habilidades profesionales</h2>
+                    <p class="skills__text">Tengo habilidad en las tecnicas de pintura tales como: Lapices de colores, tiza pastel, oleo, acrilico, acuarela y crochet.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='uil uil-pen skills__icon'></i>
+                            <span class="skills__name">Crochet</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='uil uil-brush-alt skills__icon'></i>
+                            <span class="skills__name">Acrilico</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='il uil-tear skills__icon'></i>
+                            <span class="skills__name">Lapices de Colores</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='uil uil-edit skills__icon'></i>
+                            <span class="skills__name">Acuerela</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/Dinosaurio.jpeg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="portfolio">
+            <h2 class="section-title">Trabajos</h2>
+            <div class="slider owl-carousel">
+                <div class="card">
+                    <div class="img"><img src="assets/img/work1jpeg.jpeg" alt=""></div>
+                    
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work2jpeg.jpeg" alt=""></div>
+                    
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work3.jpeg" alt=""></div>
+                   
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work4.jpeg" alt=""></div>
+                   
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work5.jpeg" alt=""></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contactme">
+            <h2 class="section-title">Contactame</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <a href="https://api.whatsapp.com/send?phone=+50582552096&amp;text= &#9;&#9;*_MI Confirmacion_*%0A &#9;&#9;*Hola!, me gustaria solicitar tus servicios: %0A" class="contact__button button" data-animation-name="flipIn" data-animation-duration="1000" data-animation-direction="X">Contactame</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
+    <script src="assets/js/main2.js"></script>
+
+</body>
+
+</html>
